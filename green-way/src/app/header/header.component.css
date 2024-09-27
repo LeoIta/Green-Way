@@ -1,0 +1,97 @@
+.nav {
+  padding: 10px;
+  display: flex;
+  font-size: xx-large;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-group {
+  display: flex;
+  align-items: center;
+  margin-right: 2%;
+  font-weight: bold;
+}
+
+.logo {
+  max-width: 60px;
+  margin: 0px 10px;
+}
+
+.offer {
+  background-color: green;
+  color: whitesmoke;
+  padding: 10px;
+  font-size: x-large;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.nav-opt {
+  padding: 15px;
+  text-decoration: none;
+  color: initial;
+}
+
+.nav-opt:hover {
+  transform: scale(1.2);
+}
+
+.nav-opt:visited {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1100px) {
+  .nav {
+    padding: 8px;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .nav {
+    padding: 7px;
+    margin: 10px;
+    justify-content: space-around;
+    font-size: x-large;
+  }
+  .offer {
+    font-size: large;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .nav {
+    padding: 5px;
+    margin: 5px;
+    font-size: large;
+  }
+  .nav-opt {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .nav {
+    padding: 10px 5px;
+    margin: 10px 5px;
+  }
+  .menu {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  .nav,
+  .offer {
+    font-size: medium;
+  }
+  .logo {
+    display: none;
+  }
+}
