@@ -1,4 +1,11 @@
-body {
-  background-color: whitesmoke;
-  height: 10vh;
+body,
+header,
+footer {
+  font-family: "Garamond";
+  margin: 1%;
+}
+
+footer {
+  bottom: 0;
+  position: static;
 }

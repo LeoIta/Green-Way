@@ -1,16 +1,18 @@
 <div class="footer">
   <div class="contact">
-    <a class="info" href="mailto:ania.lutomierska@gmail.com?subject=Zielonki z Doradztwem"><img class="icon"
-        src="../../assets/email.svg" alt="mail">
+    <a class="info" (click)="redirectMail($event.target)" (mouseover)="resetHref($event.target)"><img class="icon"
+        src="../../assets/icons/email.svg" alt="mail">
       ania.lutomierska&#64;gmail.com
     </a>
-    <a class="info" href="tel:+48660366416" target="_blank"><img class="icon" src="../../assets/phone.svg" alt="phone">
+    <a class="info" (click)="redirectPhone($event.target)" (mouseover)="resetHref($event.target)" target="_blank"><img
+        class="icon" src="../../assets/icons/phone.svg" alt="phone">
       +48 660 366 416
     </a>
-    <a class="info" href="https://www.facebook.com/groups/1716949495382076" target="_blank"><img class="icon"
-        src="../../assets/facebook.svg" alt="facebook">
+    <a class="info" (click)="redirectFacebook($event.target)" (mouseover)="resetHref($event.target)"
+      target="_blank"><img class="icon" src="../../assets/icons/facebook.svg" alt="facebook">
       Moje Zielone Zdrowie</a>
-    <a class="info" href="#contact">Contact Us</a>
+    <a class="info" (click)="redirectToContact()"><img class="icon" src="../../assets/icons/questions.svg"
+        alt="questions">Zadawać Pytania</a>
   </div>
   <hr>
   <div class="copyright">

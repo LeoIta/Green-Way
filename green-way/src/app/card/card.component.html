@@ -1,0 +1,10 @@
+<div class="cards">
+  @for (card of cards; track $index) {
+  <div class="card">
+    <img class="image" [src]="card.src" [alt]="card.alt">
+    <p class="name">{{card.name}}</p>
+    @if (card.price) {
+    <p class="price">{{card.price}} zł z VAT</p>
+    }
+  </div>}
+</div>

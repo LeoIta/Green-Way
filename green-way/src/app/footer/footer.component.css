@@ -1,12 +1,13 @@
 .contact {
   display: flex;
+  flex-wrap: wrap;
   padding: 5px 15%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .footer {
   background-color: rgb(130, 130, 130);
-  font-size: small;
+  font-size: large;
   color: white;
 }
 
@@ -19,13 +20,14 @@
 .info {
   display: flex;
   align-items: center;
-  min-width: 20%;
+  min-width: 40%;
   padding: 5px;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 hr {
@@ -38,24 +40,10 @@ hr {
   margin: 0px 10px;
 }
 
-@media only screen and (max-width: 990px) {
-  .contact {
-    flex-wrap: wrap;
-  }
-  .info {
-    min-width: 40%;
-  }
-  .info:last-of-type {
-    padding-left: 40px;
-    margin-left: 10px;
-    box-sizing: border-box;
-  }
-}
-
 @media only screen and (max-width: 690px) {
   .info,
   .copyright {
-    font-size: x-small;
+    font-size: medium;
   }
   .icon {
     max-width: 20px;
@@ -64,54 +52,37 @@ hr {
   .info {
     margin-left: 0;
   }
-  .info:last-of-type {
-    padding-left: 35px;
-  }
 }
 
-@media only screen and (max-width: 570px) {
+@media only screen and (max-width: 600px) {
   .contact {
     flex-direction: column;
     align-items: start;
   }
-  .info,
-  .info:last-of-type {
-    margin-left: 20%;
-  }
-  .info:last-of-type {
-    padding-left: 45px;
-  }
 }
 
 @media only screen and (max-width: 400px) {
-  .info,
-  .info:last-of-type {
-    margin-left: 5%;
-  }
   .contact,
   hr {
     margin: 0;
     padding: 0;
-    align-items: center;
-    text-align: center;
   }
   .info,
   .copyright {
-    font-size: xx-small;
+    font-size: small;
   }
   .copyright {
     text-align: center;
   }
 }
 
-@media only screen and (max-width: 200px) {
-  .info,
-  .info:last-of-type {
+@media only screen and (max-width: 210px) {
+  .info {
     padding-left: 0;
   }
   .info,
   .copyright {
-    font-size: xx-small;
+    font-size: x-small;
   }
   .copyright {
     text-align: center;
