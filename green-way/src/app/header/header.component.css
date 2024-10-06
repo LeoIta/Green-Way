@@ -11,10 +11,11 @@
   align-items: center;
   margin-right: 2%;
   font-weight: bold;
+  font-family: "Garamond";
 }
 
 .logo {
-  max-width: 60px;
+  max-width: 150px;
   margin: 0px 10px;
 }
 
@@ -39,17 +40,31 @@
 }
 
 .nav-opt:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+.selected-page:hover {
+  transform: scale(1);
 }
 
 .nav-opt:visited {
   font-weight: bold;
 }
 
+.selected-page {
+  background-color: whitesmoke;
+}
+
 @media only screen and (max-width: 1100px) {
   .nav {
     padding: 8px;
     flex-direction: column;
+  }
+  .logo {
+    margin-bottom: 5px;
+  }
+  .menu {
+    margin-top: 10px;
   }
 }
 
@@ -81,7 +96,8 @@
     padding: 10px 5px;
     margin: 10px 5px;
   }
-  .menu {
+  .menu,
+  .logo-group {
     flex-direction: column;
   }
 }
@@ -90,9 +106,6 @@
   .nav,
   .offer {
     font-size: medium;
-  }
-  .logo {
-    display: none;
   }
 }
 

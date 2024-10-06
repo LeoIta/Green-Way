@@ -1,13 +1,17 @@
-<div class="offer">Super Discount!!! Pay 2 Get 3!!</div>
+<div class="offer">Zamów zestaw 25% taniej (1 produkt GRATIS!!!) Zestaw produktów 3+1 gratis</div>
 <nav class="nav">
   <div class="logo-group">
-    <img class="logo" src="../../assets/logo.png" alt="logo">
+    <img class="logo" src="../../assets/icons/logo.png" alt="logo">
     <span>Zielonki z doradztwem</span>
   </div>
   <div class="menu">
-    <a class="nav-opt" href="#home">Home</a>
-    <a class="nav-opt" href="#product">Our Products</a>
-    <a class="nav-opt" href="#about">About Us</a>
-    <a class="nav-opt" href="#contact">Contact Us</a>
+    <a class="nav-opt" id="home" routerLink="/" routerLinkActive="selected-page"
+      [routerLinkActiveOptions]="{exact:true}">Głowna</a>
+    <a class="nav-opt" id="products" routerLink="/products" routerLinkActive="selected-page"
+      [routerLinkActiveOptions]="{exact:true}">Produkty</a>
+    <a class="nav-opt" id="about" routerLink="/about" routerLinkActive="selected-page"
+      [routerLinkActiveOptions]="{exact:true}">O Nas</a>
+    <a class="nav-opt" id="contact" routerLink="/contact" routerLinkActive="selected-page"
+      [routerLinkActiveOptions]="{exact:true}">Kontakt</a>
   </div>
 </nav>
